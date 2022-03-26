@@ -32,7 +32,7 @@ namespace Race
 
         private void Awake()
         {
-            camObj = transform.FindChild("Camera").gameObject;
+            camObj = transform.Find("Camera").gameObject;
         }
 
         private void Start()

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityStandardAssets.ImageEffects;
+//using UnityDE
 
 namespace UI
 {
@@ -43,16 +43,16 @@ namespace UI
 
         private void IncreaseMenuCounter(object sender, EventArgs eventArgs)
         {
-            if (otherMenusOpen == 0 && Camera.main != null && Camera.main.gameObject.GetComponent<BlurOptimized>() != null)
-                Camera.main.gameObject.GetComponent<BlurOptimized>().enabled = true;
+           /* if (otherMenusOpen == 0 && Camera.main != null && Camera.main.gameObject.GetComponent<BlurOptimized>() != null)
+                Camera.main.gameObject.GetComponent<BlurOptimized>().enabled = true;*/
             otherMenusOpen++;
         }
 
         private void DecreaseMenuCounter(object sender, EventArgs eventArgs)
         {
+           /* if (otherMenusOpen == 0 && Camera.main != null && Camera.main.gameObject.GetComponent<BlurOptimized>() != null)
+                Camera.main.gameObject.GetComponent<BlurOptimized>().enabled = false;*/
             otherMenusOpen--;
-            if (otherMenusOpen == 0 && Camera.main != null && Camera.main.gameObject.GetComponent<BlurOptimized>() != null)
-                Camera.main.gameObject.GetComponent<BlurOptimized>().enabled = false;
         }
     }
 }
